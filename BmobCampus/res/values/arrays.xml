@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 用于编辑公告的对象选择 -->
+<resources>
+    <string-array name="object">
+        <item>教师</item>
+        <item>学生 </item>
+        <item>教师+学生</item>
+    </string-array>
+</resources>

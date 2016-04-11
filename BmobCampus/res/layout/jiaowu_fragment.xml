@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="35dp" 
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="#FFFAF0"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                style=""
+                android:text="教学与改革" />
+
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="办事指南" />
+
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="通知中心" />
+
+            <Button
+                android:id="@+id/bt4"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="留言中心" />
+
+            <Button
+                android:id="@+id/bt5"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="新闻中心" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/jiaowu_right_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  Internal Error (javaClasses.cpp:124), pid=7992, tid=6788
+#  fatal error: Invalid layout of preloaded class
+#
+# JRE version:  (8.0_05-b13) (build )
+# Java VM: Java HotSpot(TM) Client VM (25.5-b02 mixed mode windows-x86 )
+# Failed to write core dump. Minidumps are not enabled by default on client versions of Windows
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.sun.com/bugreport/crash.jsp
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x004fd400):  JavaThread "Unknown thread" [_thread_in_vm, id=6788, stack(0x00480000,0x004d0000)]
+
+Stack: [0x00480000,0x004d0000],  sp=0x004cf4c4,  free space=317k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x1921e8]
+V  [jvm.dll+0x18b2e6]
+V  [jvm.dll+0x3aafa]
+V  [jvm.dll+0x3acb0]
+V  [jvm.dll+0x499f3]
+V  [jvm.dll+0x9c1ae]
+V  [jvm.dll+0x9c472]
+V  [jvm.dll+0x140ae1]
+V  [jvm.dll+0x1647e8]
+V  [jvm.dll+0xd8c61]
+C  [javaw.exe+0x13ce]
+C  [javaw.exe+0x1e85]
+C  [javaw.exe+0xab71]
+C  [javaw.exe+0xabfb]
+C  [KERNEL32.DLL+0x2850d]
+C  [ntdll.dll+0x5bd99]
+C  [ntdll.dll+0x5bd6c]
+
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x004fd400 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=6788, stack(0x00480000,0x004d0000)]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (10 events):
+Event: 0.076 loading class java/lang/CharSequence done
+Event: 0.076 loading class java/lang/String done
+Event: 0.076 loading class java/lang/Class
+Event: 0.076 loading class java/lang/reflect/AnnotatedElement
+Event: 0.076 loading class java/lang/reflect/AnnotatedElement done
+Event: 0.076 loading class java/lang/reflect/GenericDeclaration
+Event: 0.077 loading class java/lang/reflect/GenericDeclaration done
+Event: 0.077 loading class java/lang/reflect/Type
+Event: 0.077 loading class java/lang/reflect/Type done
+Event: 0.077 loading class java/lang/Class done
+
+
+Dynamic libraries:
+0x012e0000 - 0x01310000 	C:\Program Files (x86)\bin\javaw.exe
+0x77b10000 - 0x77c67000 	C:\windows\SYSTEM32\ntdll.dll
+0x75570000 - 0x756a0000 	C:\windows\SYSTEM32\KERNEL32.DLL
+0x75c40000 - 0x75ce7000 	C:\windows\SYSTEM32\KERNELBASE.dll
+0x75480000 - 0x7552e000 	C:\windows\SYSTEM32\ADVAPI32.dll
+0x76160000 - 0x76276000 	C:\windows\SYSTEM32\USER32.dll
+0x72980000 - 0x72b78000 	C:\windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.9200.17359_none_8935f06086091acc\COMCTL32.dll
+0x74e70000 - 0x74f21000 	C:\windows\SYSTEM32\msvcrt.dll
+0x75350000 - 0x75384000 	C:\windows\SYSTEM32\sechost.dll
+0x74dc0000 - 0x74e6c000 	C:\windows\SYSTEM32\RPCRT4.dll
+0x77950000 - 0x77a4d000 	C:\windows\SYSTEM32\GDI32.dll
+0x74d90000 - 0x74dad000 	C:\windows\SYSTEM32\SspiCli.dll
+0x74d80000 - 0x74d89000 	C:\windows\SYSTEM32\CRYPTBASE.dll
+0x74d20000 - 0x74d71000 	C:\windows\SYSTEM32\bcryptPrimitives.dll
+0x74f50000 - 0x74f70000 	C:\windows\system32\IMM32.DLL
+0x75e80000 - 0x75f5d000 	C:\windows\SYSTEM32\MSCTF.dll
+0x5e300000 - 0x5e3bf000 	C:\Program Files (x86)\bin\msvcr100.dll
+0x65490000 - 0x65826000 	C:\Program Files (x86)\bin\client\jvm.dll
+0x70e90000 - 0x70e98000 	C:\windows\SYSTEM32\WSOCK32.dll
+0x758e0000 - 0x75901000 	C:\windows\SYSTEM32\WINMM.dll
+0x753e0000 - 0x753e6000 	C:\windows\SYSTEM32\PSAPI.DLL
+0x75800000 - 0x75850000 	C:\windows\SYSTEM32\WS2_32.dll
+0x75e50000 - 0x75e7a000 	C:\windows\SYSTEM32\WINMMBASE.dll
+0x757f0000 - 0x757f8000 	C:\windows\SYSTEM32\NSI.dll
+0x6e650000 - 0x6e65c000 	C:\Program Files (x86)\bin\verify.dll
+0x65050000 - 0x65071000 	C:\Program Files (x86)\bin\java.dll
+0x65030000 - 0x65043000 	C:\Program Files (x86)\bin\zip.dll
+0x741a0000 - 0x742c9000 	C:\windows\SYSTEM32\dbghelp.dll
+
+VM Arguments:
+jvm_args: -Dfile.encoding=GBK -Xbootclasspath:D:\android_base\Android_SDK_windows\adt-bundle-windows-x86-20131030\sdk\platforms\android-19\android.jar 
+java_command: com.example.campusapp.ChatToTeaActivity
+java_class_path (initial): J:\2015Android\androidtest\BmobCampus\bin\classes;J:\2015Android\androidtest\BmobCampus\libs\okio-1.4.0.jar;J:\2015Android\androidtest\BmobCampus\libs\BmobSDK_V3.4.5_1111.jar;J:\2015Android\androidtest\BmobCampus\libs\activeandroid-3.1-beta.jar;J:\2015Android\androidtest\appcompat_v7\libs\android-support-v4.jar;J:\2015Android\androidtest\BmobCampus\libs\Bmob_Push_V0.6beta_20150408.jar;J:\2015Android\androidtest\BmobCampus\libs\BaiduLBS_Android.jar;J:\2015Android\androidtest\appcompat_v7\libs\android-support-v7-appcompat.jar;J:\2015Android\androidtest\BmobCampus\libs\okhttp-2.4.0.jar;J:\2015Android\androidtest\appcompat_v7\bin\appcompat_v7.jar
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+JAVA_HOME=C:\Program Files (x86)\Java\jdk1.8.0_25
+CLASSPATH=.C:\Program Files (x86)\Java\jdk1.8.0_25\lib;C:\Program Files (x86)\Java\jdk1.8.0_25\lib\tools.jar;
+USERNAME=hyc
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 60 Stepping 3, GenuineIntel
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 8 , 64 bit Build 9200 
+
+CPU:total 4 (2 cores per cpu, 2 threads per core) family 6 model 60 stepping 3, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, ht, tsc, tscinvbit
+
+Memory: 4k page, physical 8298772k(2431000k free), swap 16687380k(8671916k free)
+
+vm_info: Java HotSpot(TM) Client VM (25.5-b02) for windows-x86 JRE (1.8.0_05-b13), built on Mar 18 2014 01:14:47 by "java_re" with MS VC++ 10.0 (VS2010)
+
+time: Tue Feb 09 12:07:44 2016
+elapsed time: 0 seconds
+

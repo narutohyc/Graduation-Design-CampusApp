@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bottomtab_normal">#c8bca5</color>
+    <color name="bottomtab_press">#8b572a</color>
+    <color name="line">#c8bca5</color>
+    <color name="blue_line">#c8bca5</color>
+    <color name="shouye_bg">#B2DFEE</color>
+    <color name="title_bg">#A4D3EE</color>
+    <color name="universal_bg">#FFFAF0</color>
+</resources>
